@@ -1,5 +1,20 @@
+/* great-vibes-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Great Vibes';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/great-vibes-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
+
 body{
     margin:0;
+}
+
+.noDisplay{
+    display: none;
 }
 
 header{
@@ -10,6 +25,7 @@ header{
     width:100%;
     position: fixed;
     box-shadow: 0px 2px rgba(0,0,0,0.2);
+    z-index: 20;
 }
 
 main{
@@ -34,6 +50,15 @@ main{
     align-items: center;
     height: 125px;
     
+}
+
+#headerImage{
+    font-family: 'Great Vibes';
+    display: flex;
+    align-items: center;
+    gap:10px;
+    font-size: 72px;
+
 }
 
 #headerImageImage{
@@ -156,6 +181,13 @@ h2{
     color:white;
 }
 
+#burgerMenuButton{
+    display: none;
+}
+
+#burgerMenu{
+    
+}
 
 
 
@@ -170,7 +202,9 @@ h2{
 
 @media (max-width: 800px){
     
-    
+    main{
+        height: 100vh;
+    }
     .content{
     padding-left: 10px;
     padding-right:10px;
@@ -185,13 +219,14 @@ h2{
     }
 
     #headerImageImage{
-        height:28px;
-        width: 28px;
+        height:42px;
+        width: 42px;
+        padding-left: 50px;
     }
 
     .headerIcons{
-        height: 22px;
-        width: 22px;
+        height: 28px;
+        width: 28px;
     }
 
     #headerNavLinks{
@@ -199,8 +234,8 @@ h2{
     }
 
     .navIcon{
-        height:20px;
-        width:20px;
+        height:48px;
+        width:48px;
     
     }
 
@@ -210,7 +245,84 @@ h2{
 
     #feedContent{
        margin-top:67px;
+       width:100%;
     }
     
+    #appName{
+        display: none;
+    }
+
+
+    #suggestions{
+        display: none;
+        
+    }
+
+    #personalSuggestions{
+        
+        gap:2px;
+            }
     
+    .otherProfiles{
+       padding-left: 0px; 
+       gap:2px;
+    }
+
+    #headerNavLinks{
+        display: none;
+    }
+
+    #searchbar{
+        display: none;
+    }
+    
+    #burgerMenuButton{
+        display: initial;
+        padding-right: 50px;
+        cursor: pointer;
+
+    }
+
+    #burgerMenu{
+       position: fixed;
+       top: 64px;
+       bottom: 0px;
+       left:0px;
+       right:0px;
+
+        
+    }
+
+    #burgerMenuContent{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top:50px;
+        
+        
+        
+        
+        background-color: blueviolet;
+        
+    }
+
+    #personalSuggestions2{
+        display: flex;
+        gap:15px;
+        
+    }
+
+
+    .profilPicInSuggestions{
+        height:48px;
+        width:48px;
+        
+    }
+
+
+    .profilPicInSuggestions:hover{
+        cursor: pointer;
+    }
 }
