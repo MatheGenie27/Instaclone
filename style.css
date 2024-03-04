@@ -1,3 +1,5 @@
+/*Schriften */
+
 /* great-vibes-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -7,10 +9,26 @@
     src: url('../fonts/great-vibes-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
 
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
 
+  
+
+/*CSS */  
 
 body{
     margin:0;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+
 }
 
 .noDisplay{
@@ -58,6 +76,7 @@ main{
     align-items: center;
     gap:10px;
     font-size: 72px;
+    height: fit-content;
 
 }
 
@@ -105,7 +124,64 @@ main{
     background-color: aquamarine;
     height:150vh;
     margin-top:126px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
 }
+
+.post{
+    background-color: antiquewhite;
+}
+
+.postHeader{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: fit-content;
+    padding-left: 15px;
+}
+
+.authorRow{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    height: 66px;
+    
+}
+
+
+.postAuthor:hover{
+    cursor: pointer;
+}
+
+.postImage{
+    width: 100%;
+
+}
+
+.postImage:hover{
+    cursor: pointer;
+}
+
+.postImageImage{
+    width: 100%;
+}
+
+.iconRow{
+    display: flex;
+    gap: 10px;
+}
+
+.iconRowIcon{
+    height: 24px;
+    width: 24px;
+}
+
+.iconRowIcon:hover{
+    cursor: pointer;
+}
+
 
 #suggestions{
     width:30%;
@@ -131,11 +207,20 @@ h2{
     
 }
 
+#profileRow:hover{
+    cursor: pointer;
+}
+
 .profilPicInSuggestions{
     width:32px;
     height:32px;
-    border-radius: 100%;;
+    border-radius: 100%;
 }
+
+.profilPicInSuggestions:hover{
+    cursor: pointer;
+}
+
 
 #personalSuggestions{
     display: flex;
@@ -149,6 +234,10 @@ h2{
     align-items: center;
     padding: 10px 10px;
     gap:10px;
+}
+
+.otherProfiles:hover{
+    cursor: pointer;
 }
 
 
@@ -181,13 +270,15 @@ h2{
     color:white;
 }
 
+
+/*Burger */
 #burgerMenuButton{
     display: none;
 }
 
 
 
-
+/* Responsive */
 
 @media (max-width: 1000px){
     
@@ -202,8 +293,8 @@ h2{
     
     
     .content{
-    padding-left: 10px;
-    padding-right:10px;
+    padding-left: 1px;
+    padding-right:1px;
     }
 
     #headerImage{
@@ -324,8 +415,8 @@ h2{
 
 
     .profilPicInSuggestions{
-        height:48px;
-        width:48px;
+        height:32px;
+        width:32px;
         
     }
 
