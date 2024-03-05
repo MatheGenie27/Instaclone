@@ -3,14 +3,12 @@
 let burger = false;
 
 function showBurgerMenu() {
-  console.log("zeige BurgerMenü");
-  document.getElementById("burgerMenu").classList.remove("noDisplay");
+    document.getElementById("burgerMenu").classList.toggle("noDisplay");
   burger = true;
 }
 
 function hideBurgerMenu() {
-  console.log("verstecke BurgerMenü");
-  document.getElementById("burgerMenu").classList.add("noDisplay");
+  document.getElementById("burgerMenu").classList.toggle("noDisplay");
   burger = false;
 }
 
