@@ -50,7 +50,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: coral;
+    background-color: white;
 }
 
 .content{
@@ -78,6 +78,11 @@ main{
     font-size: 72px;
     height: fit-content;
 
+}
+
+#appName{
+    text-decoration: none;
+    color: palevioletred;
 }
 
 #headerImageImage{
@@ -121,7 +126,7 @@ main{
 
 #feedContent{
     width:70%;
-    background-color: aquamarine;
+    background-color: white
     height:150vh;
     margin-top:126px;
 
@@ -131,7 +136,8 @@ main{
 }
 
 .post{
-    background-color: antiquewhite;
+    background-color: white;
+    border: solid 1px rgba(0,0,0,0.2);
 }
 
 .postHeader{
@@ -171,6 +177,7 @@ main{
 .iconRow{
     display: flex;
     gap: 10px;
+    padding-left: 15px;
 }
 
 .iconRowIcon{
@@ -182,10 +189,44 @@ main{
     cursor: pointer;
 }
 
+.likesRow{
+    padding-left: 15px;
+}
+
+.inputRow{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.commentSection{
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.inputComments{
+    border: none;
+    height: 24px;
+    width: 100%;
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+
+.sendCommentIcon{
+    
+    width: 24px;
+    height: 24px;
+}
+
+.sendCommentIcon:hover{
+    cursor: pointer;
+}
+
 
 #suggestions{
     width:30%;
-    background-color: darkcyan;
+    background-color: white;
     height:500px;
     position: sticky;
     top:127px;
@@ -240,6 +281,25 @@ h2{
     cursor: pointer;
 }
 
+#footerDesktop{
+    color: rosybrown;
+    font-size: 12px;
+}
+
+#footerDesktop a{
+    text-decoration: none;
+    color:rosybrown;
+}
+
+#footerMobile{
+    color: black;
+    font-size: 10px;
+}
+
+#footerMobile a{
+    text-decoration: none;
+    color:black;
+}
 
 
 /*Scrollbar */
@@ -393,7 +453,7 @@ h2{
         height:100%;
         
         
-        background-color: blueviolet;
+        background-color: rosybrown;
         
     }
 
@@ -406,7 +466,7 @@ h2{
 
     #subButtons{
         width:90%;
-        height: 50%;
+        height: 20%;
         
         
     }

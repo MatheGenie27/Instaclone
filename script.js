@@ -49,6 +49,10 @@ function postHTML(index){
             </div>
             <div class = "likesRow"> Gefällt ${posts[index].likes} Mal</div>
             <div class = "commentSection" id="commentSection${index}"> </div>
+            <div class = "inputRow">
+                <input type="text" class = "inputComments" id="inputAtPost${index}" placeholder="Kommentiere...."> 
+                <img class="sendCommentIcon" onclick="sendComment(${index})" title="Kommentar abschicken" src="./img/icons/paperplane.png">
+            </div>
             
             
         </div>
@@ -105,6 +109,19 @@ function isItLiked(index){
     }
 }
 
+
+function sendComment(index){
+    input = document.getElementById(`inputAtPost${index}`);
+    if (input.value){
+        posts[index].comments.push(`<b>MatheGenie27</b>: `+input.value);
+        store();
+        render();
+    } else {
+        input.placeholder="Leerer Kommentar nicht möglich";
+    }
+    
+}
+
 //Darstellung Feed
 
 function render(){
@@ -122,19 +139,32 @@ function render(){
 }
 
 
+function store(){
+    let postsAsText = JSON.stringify(posts);
+    localStorage.setItem('posts', postsAsText );
+}
+
+function load(){
+    let postsAsText = localStorage.getItem('posts');
+    if (postsAsText) {
+        posts = JSON.parse(postsAsText);
+    }
+}
+
+
 //Daten der Posts
 
 let posts = [
             {       
                 "authorProfile" : `./img/icons/man.png`,
-                "author": `Nupsi`,
-                "location": `Hamburg, Germany`,
+                "author": `Booklover`,
+                "location": `Mainz, Germany`,
                 "image" : `./img/books-8405721_1280.jpg`,
                 "isLiked": true,
                 "likes": 23,
                 "comments" : [
-                            `Kommentar 1`,
-                            `Kommentar 2`
+                            `<b>Booklover</b>: Als Gutenberg die Buchdruckmaschine erfand, war das der Beginn einer neuen Zeit!`,
+                            `<b>Gamerkiddie</b>: Das is sowas von oldschool. Heute gibts Kindle!`
                             ]
 
             },
