@@ -74,7 +74,7 @@ function comments(index) {
     commentSection.innerHTML += `${commentsHTML(index, j)}`;
   }
 }
-
+ 
 function commentsHTML(index, j) {
   return `
         <div class="comment">

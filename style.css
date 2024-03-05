@@ -76,7 +76,7 @@ main {
 
 #appName {
   text-decoration: none;
-  color: palevioletred;
+  color: rosybrown;
 }
 
 #headerImageImage {
@@ -157,6 +157,7 @@ main {
   align-items: center;
   justify-content: space-between;
   padding-right: 30px;
+  padding-bottom: 5px;
 }
 
 .postImage {
@@ -203,6 +204,9 @@ main {
 .commentSection {
   padding-left: 15px;
   padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap:3px;
 }
 
 .inputComments {
@@ -211,6 +215,14 @@ main {
   width: 100%;
   padding-bottom: 15px;
   font-size: 15px;
+  
+}
+
+
+
+.inputComments:focus{
+    outline-color: rosybrown;
+    
 }
 
 .sendCommentIcon {
