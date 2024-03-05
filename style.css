@@ -2,486 +2,456 @@
 
 /* great-vibes-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Great Vibes';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/great-vibes-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Great Vibes";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/great-vibes-v18-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 /* roboto-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: url('./fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-
-  
-
-/*CSS */  
-
-body{
-    margin:0;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/roboto-v30-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-.noDisplay{
-    display: none;
+/*CSS */
+
+body {
+  margin: 0;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
 }
 
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    width:100%;
-    position: fixed;
-    box-shadow: 0px 2px rgba(0,0,0,0.2);
-    z-index: 20;
+.noDisplay {
+  display: none;
 }
 
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0px 3px rgba(0, 0, 0, 0.2);
+  z-index: 20;
 }
 
-.content{
-    
-    /*border: 3px solid brown;*/
-    width: 100%;
-    max-width: 1440px;
-    padding-left: 160px;
-    padding-right: 160px;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }
 
-#headerContent{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 125px;
-    
+.content {
+  /*border: 3px solid brown;*/
+  width: 100%;
+  max-width: 1440px;
+  padding-left: 160px;
+  padding-right: 160px;
 }
 
-#headerImage{
-    font-family: 'Great Vibes';
-    display: flex;
-    align-items: center;
-    gap:10px;
-    font-size: 72px;
-    height: fit-content;
-
+#headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 125px;
 }
 
-#appName{
-    text-decoration: none;
-    color: palevioletred;
+#headerImage {
+  font-family: "Great Vibes";
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 72px;
+  height: fit-content;
 }
 
-#headerImageImage{
-    height: 72px;
-    width:72px;
-    border-radius: 100%;
+#appName {
+  text-decoration: none;
+  color: palevioletred;
 }
 
-.headerIcons{
-    height: 26px;
-    width: 26px;
+#headerImageImage {
+  height: 72px;
+  width: 72px;
+  border-radius: 100%;
 }
 
-#headerNavLinks{
-    display: flex;
-    align-items: center;
-    gap: 24px;
+.headerIcons {
+  height: 26px;
+  width: 26px;
 }
 
-.navIcon{
-    height:38px;
-    width:38px;
-
+#headerNavLinks {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
-#urprofile{
-    border-radius: 100%;
+.navIcon {
+  height: 38px;
+  width: 38px;
 }
 
-#searchbar{
-    display: flex;
-    align-items: center;
-    
+#urprofile {
+  border-radius: 100%;
+  object-fit: cover;
 }
 
-#mainContent{
-    display: flex;
-    justify-content: center;
-    
+#searchbar {
+  display: flex;
+  align-items: center;
 }
 
-#feedContent{
-    width:70%;
-    background-color: white
-    height:150vh;
-    margin-top:126px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
+#mainContent {
+  display: flex;
+  justify-content: center;
 }
 
-.post{
-    background-color: white;
-    border: solid 1px rgba(0,0,0,0.2);
+#feedContent {
+  width: 70%;
+  background-color: white;
+  height: 150vh;
+  margin-top: 142px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 25px;
 }
 
-.postHeader{
-    display: flex;
-    flex-direction: column;
-    width:100%;
-    height: fit-content;
-    padding-left: 15px;
+.post {
+  background-color: white;
+  border: solid 1px rgba(0, 0, 0, 0.2);
 }
 
-.authorRow{
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    height: 66px;
-    
+.postHeader {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  padding-left: 15px;
 }
 
-
-.postAuthor:hover{
-    cursor: pointer;
+.authorRow {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  height: 66px;
 }
 
-.postImage{
-    width: 100%;
-
+.postAuthor:hover {
+  cursor: pointer;
 }
 
-.postImage:hover{
-    cursor: pointer;
+.timeAndLocationRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 30px;
 }
 
-.postImageImage{
-    width: 100%;
+.postImage {
+  width: 100%;
 }
 
-.iconRow{
-    display: flex;
-    gap: 10px;
-    padding-left: 15px;
+.postImage:hover {
+  cursor: pointer;
 }
 
-.iconRowIcon{
-    height: 24px;
-    width: 24px;
+.postImageImage {
+  width: 100%;
 }
 
-.iconRowIcon:hover{
-    cursor: pointer;
+.iconRow {
+  display: flex;
+  gap: 10px;
+  padding-left: 15px;
 }
 
-.likesRow{
-    padding-left: 15px;
+.iconRowIcon {
+  height: 24px;
+  width: 24px;
+  padding-bottom: 4px;
 }
 
-.inputRow{
-    display: flex;
-    align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
+.iconRowIcon:hover {
+  cursor: pointer;
 }
 
-.commentSection{
-    padding-left: 15px;
-    padding-bottom: 15px;
+.likesRow {
+  padding-left: 15px;
+  padding-bottom: 8px;
 }
 
-.inputComments{
-    border: none;
-    height: 24px;
-    width: 100%;
-    padding-bottom: 15px;
-    font-size: 15px;
+.inputRow {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
 }
 
-.sendCommentIcon{
-    
-    width: 24px;
-    height: 24px;
+.commentSection {
+  padding-left: 15px;
+  padding-bottom: 15px;
 }
 
-.sendCommentIcon:hover{
-    cursor: pointer;
+.inputComments {
+  border: none;
+  height: 24px;
+  width: 100%;
+  padding-bottom: 15px;
+  font-size: 15px;
 }
 
-
-#suggestions{
-    width:30%;
-    background-color: white;
-    height:500px;
-    position: sticky;
-    top:127px;
-    display: flex;
-    flex-direction: column;
-    padding:15px;
-
+.sendCommentIcon {
+  width: 24px;
+  height: 24px;
 }
 
-h2{
-    font-size: 20px;
+.sendCommentIcon:hover {
+  cursor: pointer;
 }
 
-#profileRow{
-    display: flex;
-    align-items: center;
-    padding: 30px 10px;
-    gap:10px;
-    
+#suggestions {
+  width: 30%;
+  background-color: white;
+  height: 500px;
+  position: sticky;
+  top: 127px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
 }
 
-#profileRow:hover{
-    cursor: pointer;
+h2 {
+  font-size: 20px;
 }
 
-.profilPicInSuggestions{
-    width:32px;
-    height:32px;
-    border-radius: 100%;
+#profileRow {
+  display: flex;
+  align-items: center;
+  padding: 30px 10px;
+  gap: 10px;
 }
 
-.profilPicInSuggestions:hover{
-    cursor: pointer;
+#profileRow:hover {
+  cursor: pointer;
 }
 
-
-#personalSuggestions{
-    display: flex;
-    flex-direction: column;
-    gap:5px;
-    padding:10px;
+.profilPicInSuggestions {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  object-fit: cover;
 }
 
-.otherProfiles{
-    display: flex;
-    align-items: center;
-    padding: 10px 10px;
-    gap:10px;
+.profilPicInSuggestions:hover {
+  cursor: pointer;
 }
 
-.otherProfiles:hover{
-    cursor: pointer;
+#personalSuggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
 }
 
-#footerDesktop{
-    color: rosybrown;
-    font-size: 12px;
+.otherProfiles {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  gap: 10px;
 }
 
-#footerDesktop a{
-    text-decoration: none;
-    color:rosybrown;
+.otherProfiles:hover {
+  cursor: pointer;
 }
 
-#footerMobile{
-    color: black;
-    font-size: 10px;
+#footerDesktop {
+  color: rosybrown;
+  font-size: 12px;
 }
 
-#footerMobile a{
-    text-decoration: none;
-    color:black;
+#footerDesktop a {
+  text-decoration: none;
+  color: rosybrown;
 }
 
+#footerMobile {
+  color: black;
+  font-size: 10px;
+}
+
+#footerMobile a {
+  text-decoration: none;
+  color: black;
+}
 
 /*Scrollbar */
 
-::-webkit-scrollbar{
-    width:10x;
-    display: none;
-    
-} 
-
-::-webkit-scrollbar-button{
-    display: none;
-    color: white;
-    background-color: white;
-} 
-::-webkit-scrollbar-thumb{
-    background-color: white;
-    color: white;
+::-webkit-scrollbar {
+  width: 10x;
+  display: none;
 }
 
-::-webkit-scrollbar-track{
-    color: white;
-    background-color: white;
-} 
-
-::-webkit-scrollbar-track-piece{
-    background-color: white;
-    color:white;
+::-webkit-scrollbar-button {
+  display: none;
+  color: white;
+  background-color: white;
+}
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  color: white;
 }
 
+::-webkit-scrollbar-track {
+  color: white;
+  background-color: white;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: white;
+  color: white;
+}
 
 /*Burger */
-#burgerMenuButton{
-    display: none;
+#burgerMenuButton {
+  display: none;
 }
-
-
 
 /* Responsive */
 
-@media (max-width: 1000px){
-    
-    
-    .content{
+@media (max-width: 1000px) {
+  .content {
     padding-left: 80px;
-    padding-right:80px;
-    }
+    padding-right: 80px;
+  }
 }
 
-@media (max-width: 800px){
-    
-    
-    .content{
+@media (max-width: 800px) {
+  .content {
     padding-left: 1px;
-    padding-right:1px;
-    }
+    padding-right: 1px;
+  }
 
-    #headerImage{
-        font-size: 15px;
-    }
+  #headerImage {
+    font-size: 15px;
+  }
 
-    #headerContent{
-        height:64px;
-    }
+  #headerContent {
+    height: 64px;
+  }
 
-    #headerImageImage{
-        height:56px;
-        width: 56px;
-        padding-left: 50px;
-    }
+  #headerImageImage {
+    height: 56px;
+    width: 56px;
+    padding-left: 50px;
+  }
 
-    .headerIcons{
-        height: 28px;
-        width: 28px;
-    }
+  .headerIcons {
+    height: 28px;
+    width: 28px;
+  }
 
-    #headerNavLinks{
-        font-size: 10px;
-    }
+  #headerNavLinks {
+    font-size: 10px;
+  }
 
-    .navIcon{
-        height:48px;
-        width:48px;
-    
-    }
+  .navIcon {
+    height: 48px;
+    width: 48px;
+  }
 
-    #suggestions{
-        top:66px;
-    }
+  #suggestions {
+    top: 66px;
+  }
 
-    #feedContent{
-       margin-top:67px;
-       width:100%;
-    }
-    
-    #appName{
-        display: none;
-    }
+  #feedContent {
+    margin-top: 67px;
+    width: 100%;
+  }
 
+  #appName {
+    display: none;
+  }
 
-    #suggestions{
-        display: none;
-        
-    }
+  #suggestions {
+    display: none;
+  }
 
-    #personalSuggestions{
-        
-        gap:2px;
-            }
-    
-    .otherProfiles{
-       padding-left: 0px; 
-       gap:2px;
-    }
+  #personalSuggestions {
+    gap: 2px;
+  }
 
-    #headerNavLinks{
-        display: none;
-    }
+  .otherProfiles {
+    padding-left: 0px;
+    gap: 2px;
+  }
 
-    #searchbar{
-        display: none;
-    }
-    
-    #burgerMenuButton{
-        display: initial;
-        padding-right: 50px;
-        cursor: pointer;
+  #headerNavLinks {
+    display: none;
+  }
 
-    }
+  #searchbar {
+    display: none;
+  }
 
-    #burgerMenu{
-       position: sticky;
-       top: 64px;
-       bottom: 0px;
-       left:0px;
-       right:0px;
-       z-index: 5;
-       height:100vh;
-       
-       
-    }
+  #burgerMenuButton {
+    display: initial;
+    padding-right: 50px;
+    cursor: pointer;
+  }
 
-    #burgerMenuContent{
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        padding-top:50px;
-        width: 100%;
-        height:100%;
-        
-        
-        background-color: rosybrown;
-        
-    }
+  #burgerMenu {
+    position: sticky;
+    top: 64px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 5;
+    height: 100vh;
+  }
 
-    #burgerMenuButtons{
-        display: flex;
-        flex-direction: column;
-        height: 70%;
-        justify-content: space-around;
-    }
+  #burgerMenuContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
 
-    #subButtons{
-        width:90%;
-        height: 20%;
-        
-        
-    }
+    background-color: rosybrown;
+  }
 
-    
+  #burgerMenuButtons {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-around;
+  }
 
+  #subButtons {
+    width: 90%;
+    height: 20%;
+  }
 
-    .profilPicInSuggestions{
-        height:32px;
-        width:32px;
-        
-    }
+  .profilPicInSuggestions {
+    height: 32px;
+    width: 32px;
+  }
 
-
-    .profilPicInSuggestions:hover{
-        cursor: pointer;
-    }
+  .profilPicInSuggestions:hover {
+    cursor: pointer;
+  }
 }
