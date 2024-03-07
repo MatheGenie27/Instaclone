@@ -2,9 +2,9 @@
 
 let burger = false;
 
-function showBurgerMenu() {
+function showBurgerMenu(){
     document.getElementById("burgerMenu").classList.toggle("noDisplay");
-  burger = true;
+    burger = true;
 }
 
 function hideBurgerMenu() {
